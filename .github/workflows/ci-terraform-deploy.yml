@@ -41,7 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch: cpr/${{ github.ref_name }}
-          title: $COMMIT_TITLE
+          title: ${{ env.COMMIT_TITLE }}
           delete-branch: true
           signoff: true
           body: |
